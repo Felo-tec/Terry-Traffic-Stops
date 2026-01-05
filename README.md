@@ -72,9 +72,6 @@ jupyter nbconvert --to notebook --execute index.ipynb --output index_executed.ip
 - Package preprocessing and model pipeline for reproducible training/deployment.
 - Add unit tests and a `requirements.txt` for environment reproducibility.
 
-## Contact
-
-felix.kipkurui@student.moringaschool.com
 
 ## Conclusion
 
@@ -84,6 +81,10 @@ felix.kipkurui@student.moringaschool.com
 	- Run fairness audits and consider reweighing or constrained optimization if disparities persist.
 	- Perform causal inference (propensity scores, instrumental variables) before asserting policy recommendations.
 	- Extract preprocessing and model pipelines for reproducible evaluation and monitoring.
+
+## Contact
+
+felix.kipkurui@student.moringaschool.com
 
 ---
 Generated: January 2026
