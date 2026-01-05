@@ -129,42 +129,30 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 - Call-type effects: Calls like shoplifting and assault have substantially higher arrest rates, making call context a legitimate and powerful predictor.
 - Model performance: Gradient Boosting and Logistic Regression show the best ROC AUC (~0.80–0.83). Random Forest is competitive but shows the typical precision/recall trade-offs on the minority class.
 
-## Requirements
-
-- Python 3.8+
-- Install the core dependencies into a virtual environment:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn scipy ipython jupyter
-```
-
-Optional for headless execution:
-
-```bash
-pip install nbconvert
-```
-
-## Quick Start
-
-1. Place `Terry_Stops_20251225.csv` in the repository root (next to `index.ipynb`).
-2. Open the notebook in VS Code or Jupyter:
-
-```bash
-jupyter notebook index.ipynb
-```
-
-3. (Optional) Execute headlessly and save outputs:
-
-```bash
-jupyter nbconvert --to notebook --execute index.ipynb --output index_executed.ipynb
-```
-
 ## What the Notebook Does
 
 - Loads and cleans the Terry stop dataset.
 - Explores arrest distributions and relationships with key features.
 - Trains: Logistic Regression, Random Forest, Gradient Boosting, Decision Tree, Naive Bayes, AdaBoost, Extra Trees.
 - Compares models (ROC AUC, PR curves, confusion matrices) and inspects feature importances.
+
+## About the Notebook / Walkthrough
+
+The notebook (`index.ipynb`) is organized as a readable analysis script with the following key sections:
+
+- **Imports & Setup:** loads libraries and configuration for plotting and modeling.
+- **Data Loading:** reads `Terry_Stops_20251225.csv` into `df` and shows initial rows and schema checks.
+- **Cleaning Function:** `clean_stops(df)` standardizes column names, parses dates, handles missing values, encodes flag columns, and engineers `officer_age_at_stop`.
+- **Create `df_clean`:** applies the cleaning function to produce the working dataframe used throughout.
+- **Exploratory Data Analysis (EDA):** visualizations of `Arrest Flag`, race/age/gender breakdowns, weapon presence, call types, and frisk relationships.
+- **Feature Engineering & Preprocessing:** identify categorical and numeric columns, one-hot encoding, scaling, and pipeline setup via `ColumnTransformer`.
+- **Modeling:** trains multiple classifiers (pipelines) with a train/test split and reports classification metrics and ROC AUC.
+- **Model Comparison & Visualization:** ROC/PR curves, confusion matrices, radar charts, and probability-distribution visualizations.
+- **Feature Importance & Interpretation:** extract and plot top features from tree-based models.
+- **Additional Analyses:** hypothesis testing (chi-square), age/weapon/call-type deep dives, and frisk vs arrest cross-tabs.
+- **Conclusion & Key Findings:** summarizes insights, limitations, and recommendations (also reproduced in this README).
+
+Run the notebook interactively (recommended) to inspect visuals and intermediate outputs step-by-step. For reproducible runs, use the `nbconvert --execute` command shown in Quick Start.
 
 ## Notes & Caveats
 
@@ -191,6 +179,8 @@ jupyter nbconvert --to notebook --execute index.ipynb --output index_executed.ip
 ## Contact
 
 felix.kipkurui@student.moringaschool.com
+0717568020
+https://github.com/Felo-tec/Terry-Traffic-Stops
 
 ---
 Generated: January 2026
