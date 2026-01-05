@@ -139,9 +139,9 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 
 ## Contact
 
-## felix.kipkurui@student.moringaschool.com
-## 0717568020
-## https://github.com/Felo-tec/Terry-Traffic-Stops
+### felix.kipkurui@student.moringaschool.com
+### 0717568020
+### https://github.com/Felo-tec/Terry-Traffic-Stops
 
 ---
 Generated: January 2026
