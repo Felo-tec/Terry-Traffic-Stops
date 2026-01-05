@@ -49,7 +49,7 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 
 ---
 
-## Analysis Workflow
+## Data cleaning and Analysis Workflow
 
 ```
 1. DATA LOADING & CLEANING
@@ -121,16 +121,7 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 - Call-type effects: Calls like shoplifting and assault have substantially higher arrest rates, making call context a legitimate and powerful predictor.
 - Model performance: Gradient Boosting and Logistic Regression show the best ROC AUC (~0.80–0.83). Random Forest is competitive but shows the typical precision/recall trade-offs on the minority class.
 
-## What the Notebook Does
-
-- Loads and cleans the Terry stop dataset.
-- Explores arrest distributions and relationships with key features.
-- Trains: Logistic Regression, Random Forest, Gradient Boosting, Decision Tree, Naive Bayes, AdaBoost, Extra Trees.
-- Compares models (ROC AUC, PR curves, confusion matrices) and inspects feature importances.
-
-## About the Notebook / Walkthrough
-
-The notebook (`index.ipynb`) is organized as a readable analysis script with the following key sections:
+## About the Notebook
 
 - **Imports & Setup:** loads libraries and configuration for plotting and modeling.
 - **Data Loading:** reads `Terry_Stops_20251225.csv` into `df` and shows initial rows and schema checks.
