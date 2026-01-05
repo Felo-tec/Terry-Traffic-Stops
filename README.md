@@ -66,7 +66,7 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 	└─ Pipeline creation for reproducibility
 	↓
 4. MACHINE LEARNING MODELING
-	├─ Train 7 different algorithms:
+	├─ Train different models:
 	│  ├─ Logistic Regression
 	│  ├─ Random Forest
 	│  ├─ Gradient Boosting
