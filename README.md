@@ -137,7 +137,7 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 	- Perform causal inference (propensity scores, instrumental variables) before asserting policy recommendations.
 	- Extract preprocessing and model pipelines for reproducible evaluation and monitoring.
 
-## Contact
+## Author
 
 ### felix.kipkurui@student.moringaschool.com
 ### 0717568020
