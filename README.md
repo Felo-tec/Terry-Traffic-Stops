@@ -1,5 +1,5 @@
-# Terry Traffic Stops — Data Analysis
-
+# Terry Traffic Stops 
+## Data Analysis
 This repository contains a Jupyter notebook analysis of Terry stop records and example model pipelines to predict arrest outcomes. The notebook performs data cleaning, exploratory analysis, model training, and evaluation with a focus on understanding predictors and potential disparities.
 
 ## Project Overview
