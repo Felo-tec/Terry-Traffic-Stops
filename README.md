@@ -113,14 +113,6 @@ This project analyzes **Terry Stop** records from Seattle Police Department (SPD
 
  **Ethical Considerations**: Predictive models of arrests perpetuate historical patterns in the training data. A model that accurately predicts past arrests may simply be learning past biases.
 
-
-## Objectives
-
-- Clean and standardize raw Terry stop data (dates, categorical normalization, missing values).
-- Conduct EDA to surface patterns by race, age group, call type, weapon presence, frisk, and officer attributes.
-- Train multiple classifiers and compare performance, emphasizing how class imbalance affects results.
-- Report key findings, limitations, and recommendations for further analysis or responsible deployment.
-
 ## Key Findings
 
 - Class imbalance: Arrests are the minority (~11–12%), so accuracy is a misleading metric — use ROC/PR and threshold tuning.
@@ -160,12 +152,6 @@ Run the notebook interactively (recommended) to inspect visuals and intermediate
 - Observational limits: Correlation ≠ causation. Use causal methods before policy claims.
 - Data quality: Inspect missingness and recording biases; replicate preprocessing in production.
 
-## Next Steps
-
-- Calibrate, tune thresholds, and run fairness audits.
-- Package preprocessing and model pipeline for reproducible training/deployment.
-- Add unit tests and a `requirements.txt` for environment reproducibility.
-
 
 ## Conclusion
 
@@ -178,9 +164,9 @@ Run the notebook interactively (recommended) to inspect visuals and intermediate
 
 ## Contact
 
-felix.kipkurui@student.moringaschool.com
-0717568020
-https://github.com/Felo-tec/Terry-Traffic-Stops
+## felix.kipkurui@student.moringaschool.com
+## 0717568020
+## https://github.com/Felo-tec/Terry-Traffic-Stops
 
 ---
 Generated: January 2026
